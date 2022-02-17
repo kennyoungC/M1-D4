@@ -74,9 +74,7 @@ let customerShoppingCartTotal = 100;
 let shippingCost = 10;
 if (customerShoppingCartTotal > 50) {
   console.log(
-    `your total cost is ${
-      customerShoppingCartTotal + shippingCost
-    } you are eligible for a free shipping`
+    `your total cost is ${customerShoppingCartTotal} you are eligible for a free shipping`
   );
 } else {
   console.log(
