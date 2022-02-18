@@ -206,3 +206,8 @@ console.log(carsForSale);
 /* WHEN YOU ARE FINISHED
 Send the code on the Eduflow platform. In the next days we'll also learn how to use GIT
 */
+// let i = 0;
+// while (i < 10) {
+//   i++;
+//   console.log(`this is the ${i} mistake`);
+// }
