@@ -7,7 +7,10 @@ ASSIGNMENT RULES
 - You can test your code in a separate file or de-commenting the single exercises in this one.
 You can use the bash terminal, the VSCode terminal or the one embedded in your Operating System if you're using macOS or Linux.
 */
-console.log("\n--------------< EXERCISE 1 >--------------");
+let writeLine = function (title) {
+  console.log(`\n>-----------------< ${title} >-----------------<`);
+};
+writeLine("EXERCISE 1");
 
 /* EXERCISE 1
 Write the code to revert an array.
@@ -19,7 +22,7 @@ let array = [1, 2, 3, 4, 5, 6, 7];
 array.reverse();
 console.log(array);
 
-console.log("\n--------------< EXERCISE 2 >--------------");
+writeLine("EXERCISE 2");
 
 /* EXERCISE 2
 Write the code to get the maximum value in an array.
@@ -27,14 +30,14 @@ Write the code to get the maximum value in an array.
 
 console.log(Math.max(...array));
 
-console.log("\n--------------< EXERCISE 3 >--------------");
+writeLine("EXERCISE 3");
 /* EXERCISE 3
 Write the code to get the minimum value in an array.
 */
 
 console.log(Math.min(...array));
 
-console.log("\n--------------< EXERCISE 4 >--------------");
+writeLine("EXERCISE 4");
 
 /* EXERCISE 4
 Write the code to get only even numerical values in an array.
@@ -49,7 +52,7 @@ for (let i = 0; i < arr.length; i++) {
   }
 }
 
-console.log("\n--------------< EXERCISE 5 >--------------");
+writeLine("EXERCISE 5");
 
 /* EXERCISE 5
 Write the code to delete even entries from an array.
@@ -63,7 +66,7 @@ for (let i = 0; i < arr.length; i++) {
     console.log(arr);
   }
 }
-console.log("\n--------------< EXERCISE 6 >--------------");
+writeLine("EXERCISE 6");
 
 /* EXERCISE 6
 Write the code to remove all the vowels from a string.
@@ -80,7 +83,7 @@ let noVowels = str.replace(/[aeiou]/gi, "");
 // )
 console.log(noVowels);
 
-console.log("\n--------------< EXERCISE 7 >--------------");
+writeLine("EXERCISE 7");
 
 /* EXERCISE 7
 Write the code to increase all the numeric values in a array by 1.
@@ -90,7 +93,7 @@ let numericValue = [4, 5, 6, 7, 3, 2];
 console.log(numericValue);
 for (let i = 0; i < numericValue.length; i++) console.log(numericValue[i] + 1);
 
-console.log("\n--------------< EXERCISE 8 >--------------");
+writeLine("EXERCISE 8");
 
 /* EXERCISE 8 
 Replace all the strings in an array with their length.

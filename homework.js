@@ -7,7 +7,11 @@ ASSIGNMENT RULES
 - You can test your code in a separate file or de-commenting the single exercises in this one.
 You can use the bash terminal, the VSCode terminal or the one embedded in your Operating System if you're using macOS or Linux.
 */
-console.log("\n--------------< EXERCISE 1 >--------------");
+
+let writeLine = function (title) {
+  console.log(`\n>-----------------< ${title} >-----------------<`);
+};
+writeLine("EXERCISE 1");
 
 /* EXERCISE 1
 Create an array containing the first 5 positive numbers.
@@ -15,8 +19,7 @@ Create an array containing the first 5 positive numbers.
 
 let fivePositiveNumber = [1, 2, 3, 4, 5];
 
-console.log("\n--------------< EXERCISE 2 >--------------");
-
+writeLine("EXERCISE 2");
 /* EXERCISE 2
 Create an object containing your name, surname, email address and age.
 */
@@ -28,7 +31,7 @@ let myProfile = {
   emailAddress: "kenneth@gmail.com",
 };
 
-console.log("\n--------------< EXERCISE 3 >--------------");
+writeLine("EXERCISE 3");
 
 /* EXERCISE 3
 Add to the previously created object a boolean value to represent whether you have or not a driving license.
@@ -37,7 +40,7 @@ Add to the previously created object a boolean value to represent whether you ha
 myProfile.hasADrivingLicence = true;
 console.log(myProfile);
 
-console.log("\n--------------< EXERCISE 4 >--------------");
+writeLine("EXERCISE 4");
 
 /* EXERCISE 4
 Remove from the previously created object the age property.
@@ -47,7 +50,7 @@ delete myProfile.age;
 
 console.log(myProfile);
 
-console.log("\n--------------< EXERCISE 5 >--------------");
+writeLine("EXERCISE 5");
 
 /* EXERCISE 5
 Create a second object with name, surname, email address and verify that this object has a different email address than the previous one.
@@ -62,7 +65,7 @@ console.log(mySecondProfile);
 let isEmailTheSame = myProfile.emailAddress === mySecondProfile.emailAddress;
 console.log(isEmailTheSame);
 
-console.log("\n--------------< EXERCISE 6 >--------------");
+writeLine("EXERCISE 6");
 
 /* EXERCISE 6
 You are working on an e-commerce website. In the variable totalShoppingCart you are storing the total amount spent by the current user.
@@ -84,7 +87,7 @@ if (customerShoppingCartTotal > 50) {
   );
 }
 
-console.log("\n--------------< EXERCISE 7 >--------------");
+writeLine("EXERCISE 7");
 /* EXERCISE 7
 You are working on an e-commerce website. Today is Black Friday and everything has a 20% discount at the end of the purchase.
 Modify the previous answer inserting this information and, applying the same rules for the shipping cost, calculate the totalCost.
@@ -109,7 +112,7 @@ if (customerTotalCost > 50) {
   );
 }
 
-console.log("\n--------------< EXERCISE 8 >--------------");
+writeLine("EXERCISE 8");
 
 /* EXERCISE 8
 Create an object representing a car with properties like brand, model, licensePlate.
@@ -143,7 +146,7 @@ console.log(car3);
 console.log(car4);
 console.log(car5);
 
-console.log("\n--------------< EXERCISE 9 >--------------");
+writeLine("EXERCISE 9");
 
 /* EXERCISE 9
 Create a new array called carsForRent containing all the cars from the previous exercise.
@@ -151,7 +154,7 @@ Create a new array called carsForRent containing all the cars from the previous 
 
 let carsForRent = [car, car2, car3, car4, car5];
 
-console.log("\n--------------< EXERCISE 10 >--------------");
+writeLine("EXERCISE 10");
 
 /* EXERCISE 10
 Remove the first and the last car from the carsForRent array.
@@ -168,7 +171,7 @@ console.log(
   carsForRent
 );
 
-console.log("\n--------------< EXERCISE 11 >--------------");
+writeLine("EXERCISE 11");
 
 /* EXERCISE 11
 Print in the console the TYPES of the car variable, of its licensePlate and of the its brand properties.
@@ -178,7 +181,7 @@ console.log(typeof car.licensePlate);
 console.log(typeof car.model);
 console.log(typeof car.brand);
 
-console.log("\n--------------< EXERCISE 12 >--------------");
+writeLine("EXERCISE 12");
 
 /* EXERCISE 12
 Create a new array called carsForSale and insert 3 cars in it.
@@ -196,7 +199,7 @@ let totalCars = {
 };
 console.log(totalCars);
 
-console.log("\n--------------< EXERCISE 13 >--------------");
+writeLine("EXERCISE 13");
 
 /* EXERCISE 13
 Print in the console the data from each car in the carsForSale array.
