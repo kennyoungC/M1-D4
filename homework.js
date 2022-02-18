@@ -190,7 +190,10 @@ let carsForSale = [
   { brand: "KIV", model: "under23", licensePlate: "DD666" },
   { brand: "lamborgini", model: "revoke", licensePlate: "HYPER233" },
 ];
-let totalCars = carsForRent.concat(carsForSale);
+let totalCars = {
+  carsForRent: carsForRent.length,
+  carsForSale: carsForSale.length,
+};
 console.log(totalCars);
 
 console.log("\n--------------< EXERCISE 13 >--------------");

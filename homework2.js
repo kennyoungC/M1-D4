@@ -39,11 +39,13 @@ console.log("\n--------------< EXERCISE 4 >--------------");
 /* EXERCISE 4
 Write the code to get only even numerical values in an array.
 */
+let arr = [3, 6, 7, 9, 2, "window", "ball"];
+let evenNumbers = [];
 
-for (let i = 0; i < array.length; i++) {
-  // console.log(i, array[i]);
-  if (array[i] % 2 === 0) {
-    console.log(array[i]);
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] % 2 === 0 && typeof arr[i] === "number") {
+    evenNumbers.push(arr[i]);
+    console.log(evenNumbers);
   }
 }
 
@@ -52,14 +54,15 @@ console.log("\n--------------< EXERCISE 5 >--------------");
 /* EXERCISE 5
 Write the code to delete even entries from an array.
 */
-for (let i = 0; i < array.length; i++) {
-  // console.log(i, array[i]);
-  if (array[i] % 2 === 0) {
-    // console.log(array[i]);
-    array.splice(i, 1);
+
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] % 2 === 0 && typeof arr[i] === "number") {
+    arr.splice(i, 1);
+    i--;
+
+    console.log(arr);
   }
 }
-console.log(array);
 console.log("\n--------------< EXERCISE 6 >--------------");
 
 /* EXERCISE 6
@@ -95,9 +98,7 @@ es.: ["strive", "is", "great"] => [6, 2, 5]
 */
 
 let str1 = ["strive", "is", "great"];
-str1[0] = 6;
-str1[1] = 2;
-str1[2] = 5;
+for (let i = 0; i < str1.length; i++) str1[i] = str1[i].length;
 console.log(str1);
 
 /* WHEN YOU ARE FINISHED
